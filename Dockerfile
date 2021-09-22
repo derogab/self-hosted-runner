@@ -36,6 +36,7 @@ RUN RUNNER_VERSION=$(curl https://api.github.com/repos/actions/runner/releases |
     KERNEL_VERSION=$(echo $KERNEL_VERSION | sed 's/v6l//g') && \
     KERNEL_VERSION=$(echo $KERNEL_VERSION | sed 's/v7l//g') && \
     KERNEL_VERSION=$(echo $KERNEL_VERSION | sed 's/v8l//g') && \
+    KERNEL_VERSION=$(echo $KERNEL_VERSION | sed 's/aarch64/arm64/g') && \
     curl -O -L https://github.com/actions/runner/releases/download/v$RUNNER_VERSION/actions-runner-linux-$KERNEL_VERSION-$RUNNER_VERSION.tar.gz \
     && tar xzf ./actions-runner-linux-$KERNEL_VERSION-$RUNNER_VERSION.tar.gz \
     && rm -f ./actions-runner-linux-$KERNEL_VERSION-$RUNNER_VERSION.tar.gz
