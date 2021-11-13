@@ -9,6 +9,7 @@ RUN apt-get update \
         jq \
         tar \
         gnupg2 \
+        python3 \
         apt-transport-https \
         ca-certificates \
     && apt-get clean \
