@@ -12,6 +12,7 @@ RUN apt-get update \
         python3 \
         apt-transport-https \
         ca-certificates \
+        build-essential \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
