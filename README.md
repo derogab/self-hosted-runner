@@ -4,6 +4,9 @@
 </p>
 <h3 align="center">A tool to easily control own GitHub Actions runners</h3>
 <p align="center">
+    <a href="https://hub.docker.com/r/derogab/self-hosted-runner">
+        <img src="https://img.shields.io/docker/pulls/derogab/self-hosted-runner?label=Downloads&logo=docker" alt="Docker Pulls">
+    </a>
     <a href="https://github.com/derogab/self-hosted-runner/actions/workflows/docker-publish.yml">
         <img src="https://github.com/derogab/self-hosted-runner/actions/workflows/docker-publish.yml/badge.svg" alt="Build & Push Docker Image">
     </a>

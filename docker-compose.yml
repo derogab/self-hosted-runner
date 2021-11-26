@@ -4,7 +4,7 @@ services:
 
   self-hosted-runner:
     container_name: self-hosted-runner
-    image: ghcr.io/derogab/self-hosted-runner
+    image: derogab/self-hosted-runner
     restart: always
     env_file:
       - .env
