@@ -12,8 +12,8 @@ on:
       - master
   
   schedule:
-    # Update the image two times a week
-    - cron:  '0 0 * * 0,4' # * is a special character in YAML so you have to quote this string
+    # Update the image every day
+    - cron:  '0 0 * * *' # * is a special character in YAML so you have to quote this string
   
   # Run tests for any PRs.
   pull_request:
