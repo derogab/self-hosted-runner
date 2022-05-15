@@ -69,7 +69,7 @@ jobs:
       # https://github.com/docker/login-action
       - name: Log into registry ${{ env.GITHUB_REGISTRY }}
         if: github.event_name != 'pull_request'
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: ${{ env.GITHUB_REGISTRY }}
           username: ${{ github.actor }}
@@ -119,7 +119,7 @@ jobs:
       # https://github.com/docker/login-action
       - name: Log into registry ${{ env.DOCKER_REGISTRY }}
         if: github.event_name != 'pull_request'
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: ${{ env.DOCKER_REGISTRY }}
           username: ${{ secrets.DOCKERHUB_USERNAME }}
